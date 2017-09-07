@@ -1,0 +1,29 @@
+{
+  "name": "instagram-timeline-middleware",
+  "version": "0.0.1",
+  "description": "Node middleware enabling instagram timeline requests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adorableio/instagram-timeline-middleware.git"
+  },
+  "keywords": [
+    "node",
+    "middleware",
+    "instagram",
+    "timeline",
+    "express"
+  ],
+  "author": "Jim Remsik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adorableio/instagram-timeline-middleware/issues"
+  },
+  "homepage": "https://github.com/adorableio/instagram-timeline-middleware#readme",
+  "dependencies": {
+    "instagram-node": "^0.5.8"
+  }
+}
