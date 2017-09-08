@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/adorableio/instagram-timeline-middleware#readme",
   "dependencies": {
-    "instagram-node": "^0.5.8"
+    "instagram": "git+https://github.com/Swizec/nodestagram.git"
   }
 }

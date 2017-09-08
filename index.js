@@ -1,14 +1,15 @@
-var instagram = require('instagram-node');
+var instagram = require('instagram');
 
 var instagramTimelineMiddleware = function(options) {
-  var client = new instagram.instagram({
-    client_id: options.client_id,
-    client_secret: options.client_secret
+  var client = instagram.createClient({
+    client_id: options.clientId,
+    client_secret: options.clientSecret
   });
 
   return function(req, res, next) {
-    client.user_media_recent('adorableio', [10], function(err, medias, pagination, remaining, limit) {
-      console.log(this);
+    client.users.media('self', {access_token: options.accessToken, count: 10}, function(images, error, pagination) {
+      if (error) return next(error);
+      res.send({data: images});
     });
   };
 };
