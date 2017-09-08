@@ -1,6 +1,6 @@
 var instagram = require('instagram-node');
 
-var instagramTimelineMiddleware = funtion(options) {
+var instagramTimelineMiddleware = function(options) {
   var client = new instagram.instagram({
     client_id: options.client_id,
     client_secret: options.client_secret
